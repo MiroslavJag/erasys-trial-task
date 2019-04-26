@@ -1,3 +1,14 @@
-.profileCard {
+.Wrapper {
+    display: inline-block;
+}
 
+.profileCard {
+    display: inline-block;
+    width: 225px;
+    margin: 20px;
+    border: 1px solid lightgrey;
+}
+
+.profileCard img {
+    width: 100%;
 }

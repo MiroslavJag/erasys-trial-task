@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Layout>
           <Switch>
-              <Route path="/profile-details" component={ProfileDetails} />
+              <Route path="/profiles/:id" component={ProfileDetails} />
               <Route path="/" component={Profiles} />
           </Switch>
       </Layout>
