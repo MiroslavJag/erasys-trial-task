@@ -18,6 +18,8 @@ const ProfileCard = (props) => {
                         <h3>{props.name}</h3>
                         <p>Online: {props.online_status}</p>
                         <p>Last login: {props.last_login}</p>
+                        <p>Distance: {props.distance}</p>
+                        <p>Headline: {props.headline}</p>
                     </div>
                 </Link>
             </div>

@@ -5,8 +5,10 @@
 .profileCard {
     display: inline-block;
     width: 225px;
+    height: 510px;
     margin: 20px;
     border: 1px solid lightgrey;
+    vertical-align: top;
 }
 
 .profileCard img {
