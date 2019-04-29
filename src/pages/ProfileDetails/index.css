@@ -1,0 +1,17 @@
+.WrapperProfileDetails {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.WrapperProfileDetails img {
+    padding: 20px;
+}
+.WrapperProfileDetails img, .infoSection {
+    height: 300px;
+    display: inline-block;
+}
+
+.infoSection {
+    vertical-align: top;
+    text-align: left;
+    width: 600px;
+}

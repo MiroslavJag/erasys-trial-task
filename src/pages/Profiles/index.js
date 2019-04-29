@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from '../../axiosConfig';
+import axios, {GET_PROFILES} from '../../axiosConfig';
 import ProfileCard from '../../components/ProfileCard'
 
 class Profiles extends Component {
@@ -9,10 +9,11 @@ class Profiles extends Component {
     }
 
     componentDidMount () {
-        const url = 'search?length=32'
+        const url = GET_PROFILES;
         axios.get(url)
             .then( response => {
                 this.setState( { loading: false, items: response.data.items })
+                console.log('response: ', response.data.items )
             })
             .catch( error => {
                 this.setState({loading: false});
