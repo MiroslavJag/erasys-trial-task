@@ -1,17 +1,112 @@
+
 .WrapperProfileDetails {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
-.WrapperProfileDetails img {
-    padding: 20px;
+.image-section {
+    background: linear-gradient(180deg, #FFC0CB 50%, #fafafa 50%);
 }
-.WrapperProfileDetails img, .infoSection {
+.image-section img {
+    margin: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
     height: 300px;
-    display: inline-block;
+    position: inherit;
+}
+.image-section svg {
+    font-size: 50px;
+    position: absolute;
+    margin-left: -97px;
+    margin-top: 272px;
+}
+.image-bcg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #fafafa;
 }
 
-.infoSection {
+.profile-info-section {
     vertical-align: top;
+}
+
+.WrapperProfileDetails .profile-info-section h1{
+    margin: 0;
+    color: #3b3a3b;
+}
+
+.profile-location-info {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-location-info p{
+    color: #777b80;
+}
+
+.profile-location-info svg {
+    margin: 5px 5px;
+    color: #777b80;
+}
+
+.profile-location-info p {
+    font-size: 16px;
+    margin: 0 10px 0 0;
+}
+
+.profile-headline {
+    border: 1px solid rgb(211,211,211,0.3);
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    margin: 25px auto;
+    justify-content: center;
+    font-style: italic;
+}
+
+.profile-headline p {
+    font-size: 20px;
+    margin: 0;
+}
+.profile-info-section-details{
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+}
+.profile-info-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    border: 1px solid rgb(211,211,211,1);
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+.middle-info {
+    margin: 0 10px 20px;
+}
+
+.profile-info-details p {
+    font-weight: bold;
+}
+.profile-info-details p span{
+    font-weight: 400;
+}
+.profile-info-details-card {
     text-align: left;
-    width: 600px;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 650px) {
+    .profile-info-section-details {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .profile-info-details {
+        width: 100%;
+    }
+    .middle-info {
+        margin: 0 0 20px 0;
+    }
 }

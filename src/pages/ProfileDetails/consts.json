@@ -1,0 +1,25 @@
+{
+  "CONSTS": {
+    "PERSONAL": {
+      "TITLE": "PERSONAL",
+      "ETHNICITY": "Ethnicity",
+      "RELATIONSHIP": "Relationship",
+      "SMOKER": "Smoker"
+    },
+    "LOOK" : {
+      "TITLE": "LOOK",
+      "BODY_HAIR": "Body Hair",
+      "BODY_TYPE": "Body Type",
+      "EYE_COLOR": "Eye Color",
+      "HEIGHT": "Height",
+      "WEIGHT": "Weight"
+
+    },
+    "SEXUAL": {
+      "TITLE": "SEXUAL",
+      "ANAL_POSITION": "Anal Position",
+      "SAFER_SEX": "Safer Sex",
+      "SM": "SM"
+    }
+  }
+}

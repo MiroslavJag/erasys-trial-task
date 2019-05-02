@@ -1,37 +1,57 @@
 .header {
-    display: flex;
+    position: fixed;
+    height: 60px;
+    background-color: white;
+    width: 100%;
     border-bottom: 1px solid lightgray;
 }
 
-.header div {
-    flex: 1;
-}
-
 .header h1 {
-    padding: 10px;
     margin: 0;
-}
-
-.header nav {
-    flex: 5
-}
-
-.header nav ul{
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 21px;
-}
-
-.header nav ul li{
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
     display: inline-block;
-    padding: 0 20px;
 }
 
-.header nav ul li a {
-    text-decoration: none;
+.header svg {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 29px;
 }
+
+.header p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    margin: 0;
+}
+
+.Flag {
+    width: 100%;
+}
+
+.Flag div {
+    height: 3px;
+}
+
+.Flag div:nth-child(1) {
+    background-color: red;
+}
+.Flag div:nth-child(2) {
+    background-color: orange;
+}
+.Flag div:nth-child(3) {
+    background-color: yellow;
+}
+.Flag div:nth-child(4) {
+    background-color: green;
+}
+.Flag div:nth-child(5) {
+    background-color: blue;
+}
+.Flag div:nth-child(6) {
+    background-color: purple;
+}
+
 
 
 

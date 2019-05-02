@@ -4,13 +4,74 @@
 
 .profileCard {
     display: inline-block;
-    width: 225px;
-    height: 510px;
-    margin: 20px;
+    width: 250px;
+    height: 450px;
+    margin: 18px;
     border: 1px solid lightgrey;
+    border-radius: 15px;
     vertical-align: top;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px rgba(208,208,208,1);
 }
 
 .profileCard img {
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-info-section {
+    text-align: left;
+    padding: 10px;
+    margin-top: -6px;
+}
+
+.card-info-section h3, .card-info p, .card-info-location p {
+    margin: 0;
+}
+
+.card-info-section h3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.card-info-title, .card-info-location {
+    display: flex;
+}
+
+.card-info-title p {
+    font-size: 13px;
+    margin: 5px 0 0 3px;
+    color: #777b80;
+}
+
+.card-info-title svg {
+    font-size: 10px;
+    margin: 4px 0 0 6px;
+}
+.card-info-location {
+    color: #777b80;
+    font-size: 14px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 12px;
+    margin-top: 3px;
+}
+
+.card-info-location svg{
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.card-info-location p {
+    margin: 0 10px 0 5px;
+}
+
+.card-info-location p:nth-child(4) {
+    font-size: 13px;
+}
+@media screen and (max-width: 600px) {
+    .profileCard{
+        width: 80%;
+        height: 100%;
+        margin: 30px;
+    }
 }

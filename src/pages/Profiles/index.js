@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios, {GET_PROFILES, GET_ALL_PROFILES_IDS, GET_IDS, GET_CURSOR} from '../../axiosConfig';
 import ProfileCard from '../../components/ProfileCard'
+import './index.css'
 
 
 class Profiles extends Component {
@@ -20,7 +21,7 @@ class Profiles extends Component {
         const docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
         const windowBottom = windowHeight + window.pageYOffset + 1;
         if (windowBottom >= docHeight) {
-            if (this.state.updatedItems.length >= this.state.total){
+            if (this.state.updatedItems && this.state.updatedItems.length >= this.state.total){
                 return null
             }
             this.getProfiles(this.state.cursors)
@@ -46,7 +47,9 @@ class Profiles extends Component {
                         let itemsUpdate = [...this.state.items]
                         itemsUpdate.map((item, index) => {
                             item["distance"] = response.data[index].location.distance
+                            item["city"] = response.data[index].location.city
                             item["headline"] = response.data[index].headline
+                            item["age"] = response.data[index].personal.age
                         })
                         this.setState({
                             updatedItems: this.state.updatedItems
@@ -72,12 +75,13 @@ class Profiles extends Component {
         }
         else if (this.state.loading) {
             profilePreview = <h2>Content is Loading...</h2>
-        }else {
+        }
+        else {
             profilePreview = this.state.updatedItems.map(item => {
-                return <ProfileCard {...item} key={item.id} param={item.id}/>
+                return <ProfileCard {...item}  key={item.id} />
             })
         }
-        return <>{profilePreview}</>
+        return <div className="profilesWrraper">{profilePreview}</div>
     }
 }
 

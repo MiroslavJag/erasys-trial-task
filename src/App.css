@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700');
+
 .App {
   text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  color: #3b3a3b;
 }
 
 
